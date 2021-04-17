@@ -1,0 +1,472 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(230, 230, 230);
+}
+#background{/*Imagem de fundo*/
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+/*Botões padrão da página
+-----------------------------*/
+.botao{/*Padrão dos botões da página*/
+    /*Estilo*/
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 14pt;
+    cursor: pointer;
+    backdrop-filter: blur(20px);
+
+    /*Posicionamento e medidas*/
+    position: relative;
+    height: 60px;
+    width: 180px;
+    
+    /*Efeitos visuais*/
+    transition: 1s;
+}
+    .botao:hover{/*Estilo ao passar o mouse*/
+        background-color: white;
+        color: rgb(121, 121, 121);
+    }
+
+/*Corpo da página
+-----------------------------------------*/
+.corpo{
+    background:url(imagens/background.jpg);
+    background-size: 100% 100%;
+    height: 625px;
+    width: 1349px;
+}
+
+.corpo-conteudo{/*Conteudo da seção*/
+    /*Posicionamento e medidas*/
+    z-index: 1;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    /*Estilo*/
+    text-align: center;
+    color: white;
+}
+
+.corpo-conteudo h1{/*titulo da seção*/
+    /*Posicionamento e medidas*/
+    margin-bottom: 10px;
+
+    /*Estilo*/
+    font-size: 40pt;
+    font-weight: 500;
+    text-shadow: 1px 5px 8px black;
+}
+
+.corpo-conteudo h3{/*Sub-titulo da seção*/
+    /*Estilo*/
+    font-weight: 500;
+    font-size: 20pt;
+    text-shadow: 5px 2px 5px black;
+}
+
+    /*Botões da seção*/
+    .corpo-conteudo button{/*Espaçamento entre botões*/
+        margin: 20px 30px 0 30px;
+    }
+
+    #btn-antecipado{/*Estilo do botão de "Acesso antecipado"*/
+        backdrop-filter: none;
+        background-color: rgb(238, 180, 71);
+        color: white;
+        border: 2px solid rgb(238, 180, 71);
+    }
+        #btn-antecipado:hover{/*Ao passar o mouse sobre*/
+            background-color: white;
+            color: rgb(121, 121, 121);
+            border: 2px solid rgb(255, 255, 255);
+        }
+
+/*introducao
+-----------------------------------------*/
+.introducao{
+    /*Estilo*/
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 3px 3px -2px black;
+    background-color: white;
+
+    /*Posicionamento e medidas*/
+    width: 80%;
+    height: 685px;
+    position: relative;
+    left: 50%;
+    top: -60px;
+    transform: translateX(-50%);
+  
+}
+
+.introducao-textos{/*Seção de Textos da página*/
+    /*Estilo*/
+    color: rgb(110, 110, 110);
+    text-align: center;
+
+    /*Posicionamento*/
+    position: relative;
+    top: 60px;
+}
+    .introducao-textos h1{/*Titulo da seção*/
+        font-weight: 500;
+        font-size: 28pt;
+    }
+
+    .introducao-textos hr{/*Linha horizontal*/
+        /*Estilo*/
+        border: 1px solid;
+        color:  rgb(228, 228, 228);
+
+        /*Posicionamento e medidas*/
+        width: 70%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 20px 0 20px 0;
+    }
+
+    .introducao-textos p{/*Texto da seção*/
+        /*Estilo*/
+        font-size: 16pt;
+
+        /*posicionamento e medidas*/
+        width: 70%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .introducao-textos img{/*imagem da seção*/
+        width: 100%;
+        height: 320px;
+        position: relative;
+        top: 70px;
+    }
+
+    #introducao-btn{/*Espaçamento do botão*/
+        bottom: 100px;
+    }
+
+/*Qualidades
+--------------------------------------------*/
+.qualidades{
+    /*Estilo*/
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px -2px black;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    /*Posicionamento e medidas*/
+    width: 80%;
+    height: 685px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+    /*Linhas verticais e horizontais
+    ----------------------------------*/
+    .linhas{/*Posicionamento das linhas*/
+        position: absolute;
+    }
+        #v-linha{/*Linha vertical*/
+            /*Estilo*/
+            background-color: rgb(78, 78, 78);
+
+            /*Posicionamento e medidas*/
+            height: 90%;
+            width: 2px;
+            left: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #h-linha{/*Linha horizontal*/
+            /*Estilo*/
+            background-color: rgb(134, 134, 134);
+
+            /*Posicionamento e medidas*/
+            height: 2px;
+            width: 80%;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%);
+        }
+
+    /*Caixas com detalhes
+    ---------------------------------------------*/
+    .q-caixas{/*Classe para as 4 qualidades*/
+        /*Estilo*/
+        padding: 20px;
+        text-align: center;
+
+        /*posicionamento e medidas*/
+        position: relative;
+        left: 100px;
+        top: 7%;
+        width: 65%;
+    }
+
+    .q-caixas p{/*Texto de cada qualidade*/
+        color: rgb(121, 121, 121);
+        font-size: 14pt;
+    }
+
+    .q-caixas i{/*icone de cada qualidade*/
+        /*Estilo*/
+        font-size: 32pt;
+        text-align: center;
+        color: white;
+        border-radius: 60px;
+        box-shadow: 1px 1px 3px rgb(0, 0, 0);
+
+        /*Posicionamento e medidas*/
+        height: 120px;
+        width: 120px;
+        line-height: 120px;
+        margin-bottom: 30px;
+    }
+        /*Cor de cada icone*/
+        #q-vegetacao{
+            background-color: rgba(35, 114, 35, 0.801);
+        }
+        #q-paisagens{
+            background-color: rgba(100, 100, 175, 0.801);
+        }
+        #q-seguranca{
+            background-color: rgba(173, 155, 50, 0.801);
+        }
+        #q-clima{
+            background-color: rgb(74, 110, 110);
+        }
+
+/*Seção Cadastrar email
+------------------------*/
+.inscrever{
+    /*Estilo*/
+    background-color:rgb(224, 118, 42);
+
+    /*Posicionamento e medidas*/
+    width: 100%;
+    height: 350px;
+    position: relative;
+    top: 60px;
+}
+
+.lista{/*lista da seção*/
+    /*Estilo*/
+    list-style: none;
+    color: rgb(233, 233, 233);
+    text-align: center;
+
+    /*Posicionamento e medidas*/
+    width: 1366px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: fit-content;
+    
+}
+
+.lista li{/*Espaçamento entre cada elemento*/
+    margin-bottom: 20px;
+}
+
+.lista li h1{/*Titulo da seção*/
+    font-size: 32pt;
+}
+
+.lista li p{/*Conteudo da seção*/
+    font-size: 20pt;
+}
+
+    /*Parte da lista com botão submit e input de email
+    ------------------------------------------------------------*/
+    .lista-submit li{/*Coloca elementos em linha*/
+        display: inline-block;
+    }
+        #txt-email{/*input de email*/
+            /*Estilo*/
+            border-radius: 5px;
+            border: none;
+            background-color: rgba(230, 143, 81, 0.719);
+            color: white;
+
+            /*posicionamento e medidas*/
+            height: 50px;
+            width: 400px;
+           
+            /*Efeito visual*/
+            transition: 1s;
+        }
+            #txt-email:hover{/*Ao passar o mouse sobre*/
+                background-color:  rgba(230, 143, 81);
+            }
+            #txt-email::placeholder{/*Estilo do placeholder*/
+                color: rgb(221, 221, 221);
+                text-align: center;
+            }
+
+        #btn-enviar{/*Botão de enviar*/
+            /*Estilo*/
+            font-size: 12pt;
+            color: rgba(230, 143, 81);
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+
+            /*Posicionamento e medidas*/
+            height: 50px;
+            width: 150px;
+
+            /*Efeitos visuais*/
+            transition: 1s;
+        }
+            #btn-enviar:hover{/*Ao passar o mouse sobre*/
+                background-color: rgb(180, 180, 180);
+                color: rgb(39, 39, 39);
+            }
+
+/*Rodape
+-------------------------------------*/        
+.rodape{
+    height: 240px;
+    width: 100%;
+    position: relative;
+}
+
+.rodape ul{/*lista da seção*/
+    /*Estilo*/
+    color: rgb(136, 136, 136);
+    width: fit-content;
+
+    /*Posicionamento e medidas*/
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+.rodape ul li{/*Elementos da lista*/
+    /*Estilo*/
+    display: inline-block;
+    margin: 0 10px 15px 10px;
+    font-size: 30pt;
+    cursor: pointer;
+
+    /*Efeitos visuais*/
+    transition: 1s;
+}
+    .rodape ul li:hover{/*Ao passar o mouse sobre*/
+        color: rgb(94, 94, 94);
+    }
+
+.rodape ul p{/*Copywrite*/
+    text-align: center;
+    font-size: 14pt;
+}
+
+/*Responsivo mobile
+-----------------------------------------------*/
+@media (max-width: 540px){
+    /*Seção principal da página
+    --------------------------*/
+    .corpo{
+        background-size: cover;
+        width: auto;
+    }
+
+    .corpo-conteudo h1{/*Titulo da seção*/
+        font-size: 30pt;
+    }
+
+    .corpo-conteudo h3{/*Subtitulo da seção*/
+        font-size: 15pt;
+    }
+    
+    .corpo-conteudo button{/*Espaçamento entre botões*/
+        margin: 10px 20px 0 20px;
+    }
+
+    /*introducao
+    --------------------------*/
+    .introducao{
+        width: 100%;
+        border-radius: 0%;
+        box-shadow: none;
+        height: auto;
+    }
+
+    .introducao-textos h1{/*Titulo da seção*/
+        font-size: 26pt;
+    }
+
+    .introducao-textos hr{/*Linha horizontal*/
+        width: 85%;
+    }
+
+    .introducao-textos p{/*Conteudo da seção*/
+        font-size: 15pt;
+    }
+
+    #introducao-btn{/*Botão de introdução da seção*/
+        bottom: 150px;
+    }
+
+    /*Qualidades
+    ---------------------------*/
+    .qualidades{
+        width: 100%;
+        border-radius: 0%;
+        box-shadow: none;
+        height: auto;
+        display:block;
+    }
+
+    .linhas{/*Sumir com as linhas em formato de cruz*/
+        display: none;
+    }
+
+    .q-caixas{/*Estilo das caixas em coluna*/
+        width: 80%;
+        left: 0;
+        padding: 40px 0 40px 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom: 1px solid rgb(190, 190, 190);
+    }
+
+    .q-caixas:last-child{/*Tira a borda da ultima caixa*/
+        border: none;
+    }
+
+    /*Inscricao
+    --------------------------------------*/
+    .lista li h1{/*Titulo da seçao*/
+        font-size: 28pt;
+    }
+
+    .lista li p{/*subtitulo da seção*/
+        font-size: 16pt;
+    }
+
+    #btn-enviar{/*Botão de enviar*/
+        width: 400px;
+    }
+}

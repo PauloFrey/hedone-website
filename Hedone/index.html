@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, user-scalable=no">
+        <title>Hedonê Website</title>
+
+        <link rel="stylesheet" href="style.css"><!--Link do CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <!--Seção Principal da página
+        --------------------------------------------->
+        <main class="corpo">
+            <div class="corpo-conteudo">
+                <h1>Hedonê</h1><!--Titulo da página-->
+                <h3>Um mundo que todos querem ter o prazer de conhecer.</h3><!--Subtitulo da página-->
+                <button id="btn-antecipado" class="botao">Acesso antecipado</button><!--Botão de acesso antecipado-->
+                <button id="btn-saber" class="botao">Saber mais</button><!--Botão de saber mais-->
+            </div>
+        </main>
+
+        <!--Seção de introdução à história
+        --------------------------------------------->
+        <div class="introducao">
+            <div class="introducao-textos">
+                <h1>Introdução a história de Hedonê</h1><!--Titulo da seção-->
+                <hr><!--Linha divisória-->
+                <p><!--Texto da seção-->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, placeat facilis aut exp
+                    edita sapiente quis, ut adipisci consequuntur quam excepturi, ipsum ab. Quas facilis, adip
+                    isci similique suscipit nobis ullam natus. Lorem ipsum dolor sit, amet consectetur adipisicing
+                     elit. In fugiat est qui quas voluptatibus rem totam perspiciatis laborum nihil sapiente, asperi
+                     ores, corporis mollitia! Excepturi aspernatur inventore, facilis illum architecto assumenda.
+                </p>
+
+                <div class="introducao-imagem">
+                    <img src="imagens/introducao.png" alt="Foto de nuvens no por do sol anime"><!--Imagem da seção-->
+                    <button class="botao" id="introducao-btn">Ler mais</button><!--Botão saber mais-->
+                </div>
+            </div>
+        </div>
+
+        <!--Seção com as qualidades do mundo
+        --------------------------------------------->
+        <div class="qualidades">
+            <div class="linhas" id="v-linha"></div><!--Linhas de estilo | Vertical-->
+            <div class="linhas" id="h-linha"></div><!--Linhas de estilo | Horizontal-->
+
+            <!--Divisões das qualidades-->
+            <div class="q-caixas">
+               <i class="fas fa-seedling" id="q-vegetacao"></i><!--Icone-->
+               <p><!--Conteudo-->
+                   Vegetações incríveis. Lorem ipsum dolor sit amet, consectetur adi
+                   pisicing elit. Quaerat modi harum soluta aspernatur delectus sit accusa
+                   o magnam itaque!
+                </p>
+            </div>
+
+            <div class="q-caixas">
+               <i class="fas fa-mountain" id="q-paisagens"></i><!--Icone-->
+               <p><!--Conteudo-->
+                    Paisagens inimagináveis.Lorem ipsum dolor sit amet, consectetur adi
+                    pisicing elit. Quaerat modi harum soluta aspernatur delectus sit accusa
+                    o magnam itaque!
+                </p>
+            </div>
+            
+            <div class="q-caixas">
+                <i class="fas fa-lock" id="q-seguranca"></i><!--Icone-->
+                <p><!--Conteudo-->
+                    Um lugar seguro para todos.Lorem ipsum dolor sit amet, consectetur adi
+                    pisicing elit. Quaerat modi harum soluta aspernatur delectus sit accusa
+                    o magnam itaque!
+                </p>
+            </div>
+                
+            <div class="q-caixas">
+                <i class="fas fa-cloud" id="q-clima"></i><!--Icone-->
+                <p><!--Conteudo-->
+                    Climas tropicais.Lorem ipsum dolor sit amet, consectetur adi
+                    pisicing elit. Quaerat modi harum soluta aspernatur delectus sit accusa
+                    o magnam itaque!
+                </p>
+            </div>
+            
+        </div>
+
+        <!--Seção para cadastrar email
+        --------------------------------------------->
+        <div class="inscrever">
+            <ul class="lista"><!--Lista para concatenar elementos-->
+                <li><h1>Faça parte do Open Beta</h1></li><!--Titulo da seção-->
+                <li><p>Cadastre seu e-mail para receber a chave de acesso.</p></li><!--Subtitulo-->
+                <li>
+                    <ul class="lista-submit">
+                        <li><input type="text" placeholder="Ex: meuemail@gmail.com" id="txt-email"></li><!--input de email-->
+                        <li><button id="btn-enviar">Enviar</button></li><!--Botão para enviar email-->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--Rodapé da página
+        --------------------------------------------->
+        <footer class="rodape">
+            <ul>
+                <li><i class="fab fa-facebook"></i></li><!--Icone facebook-->
+                <li><i class="fab fa-twitter"></i></li><!--Icone twitter-->
+                <li><i class="fab fa-instagram"></i></li><!--Icone instagram-->
+                <li><i class="fab fa-whatsapp"></i></li><!--Icone whatsapp-->
+                <p>Criado por Paulo Frey</p><!--Encerramento-->
+            </ul>
+        </footer>
+    </body>
+</html>
